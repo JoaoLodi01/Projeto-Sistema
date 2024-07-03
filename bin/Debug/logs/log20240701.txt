@@ -1,0 +1,10 @@
+2024-07-01 19:18:47.882 -03:00 [INF] Iniciando importação de dados do arquivo C:\Users\João\Desktop\planilha.xlsx
+2024-07-01 19:18:48.175 -03:00 [INF] Importação de dados concluída com sucesso.
+2024-07-01 19:18:48.213 -03:00 [ERR] Erro ao importar dados para o módulo clientes
+System.FormatException: A cadeia de caracteres de entrada não estava em um formato correto.
+   em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   em System.Convert.ToInt32(Object value)
+   em SGmaster.Classes.DataHelper.AddParameters(FbCommand command, DataRow row, String module) na D:\Programação\Projeto SGmaster\SGmaster\Classes\DataHelper.cs:linha 214
+   em SGmaster.Classes.DataHelper.<ImportToDatabaseAsync>d__3.MoveNext() na D:\Programação\Projeto SGmaster\SGmaster\Classes\DataHelper.cs:linha 79
